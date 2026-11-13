@@ -1,0 +1,15 @@
+{
+  "name": "phantomx-auth-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Server-side license key authentication for the PhantomX loader",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/server.js",
+    "admin": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning scripts/admin.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}
